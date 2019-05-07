@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
+import { MyAngularElementModule } from './my-angular-element/my-angular-element.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { NormalAngularComponent } from './normal-angular-component/normal-angular-component.component';
@@ -11,6 +12,7 @@ import { NormalAngularComponent } from './normal-angular-component/normal-angula
   imports: [
     BrowserModule,
     FormsModule,
+    MyAngularElementModule,
     RouterModule.forRoot(
       [
         { path: '', pathMatch: 'full', redirectTo: '/app/component' },
