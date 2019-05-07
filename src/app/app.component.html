@@ -1,0 +1,26 @@
+<hello name="{{ name }}"></hello>
+<p>
+	This is a normal Angular application root.
+</p>
+
+<ul>
+	<li>
+		<a routerLink="/app/component">Route from Angular Application > Angular component</a>
+	</li>
+	<li>
+		<a routerLink="/to-ae/ae-child-a">Route from Angular application > Angular Element</a>
+	</li>
+	<li>
+		<a routerLink="/to-ae/ae-child-a/ae-child-b">Route from Angular application > Insdie Angular Element</a>
+	</li>
+	<li>
+		<a routerLink="/app/to-ae">
+			Route from Angular application > Angular Element with nested route
+			<br>
+      (NOT SUPPORTED)
+    </a>
+  </li>
+</ul>
+
+<hr>
+<router-outlet></router-outlet>
